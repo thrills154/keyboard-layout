@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keyboard Layout</title>
+  <style>
+    body {
+      
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #keyboard {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      background-color: #34495e;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .key {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #95a5a6;
+      color: #2c3e50;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      height: 60px;
+      width: 60px;
+      border-bottom: 4px solid #7f8c8d;
+      transition: all 0.1s ease-in-out;
+    }
+
+    .key:hover {
+      background-color: #bdc3c7;
+      cursor: pointer;
+    }
+
+    .key:active {
+      transform: translateY(2px);
+      border-bottom-width: 2px;
+    }
+
+    .backspace {
+      width: 130px;
+    }
+
+    .tab {
+      width: 90px;
+    }
+
+    .capslock {
+      width: 110px;
+    }
+
+    .enter {
+      width: 130px;
+    }
+    
+    .shift-left {
+        width: 145px;
+    }
+
+    .shift-right {
+        width: 145px;
+    }
+    
+    .ctrl {
+        width: 80px;
+    }
+
+    .space {
+      width: 410px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="keyboard">
+    <div class="row">
+      <div class="key">`</div>
+      <div class="key">1</div>
+      <div class="key">2</div>
+      <div class="key">3</div>
+      <div class="key">4</div>
+      <div class="key">5</div>
+      <div class="key">6</div>
+      <div class="key">7</div>
+      <div class="key">8</div>
+      <div class="key">9</div>
+      <div class="key">0</div>
+      <div class="key">-</div>
+      <div class="key">=</div>
+      <div class="key backspace">Backspace</div>
+    </div>
+    <div class="row">
+      <div class="key tab">Tab</div>
+      <div class="key">Q</div>
+      <div class="key">W</div>
+      <div class="key">E</div>
+      <div class="key">R</div>
+      <div class="key">T</div>
+      <div class="key">Y</div>
+      <div class="key">U</div>
+      <div class="key">I</div>
+      <div class="key">O</div>
+      <div class="key">P</div>
+      <div class="key">[</div>
+      <div class="key">]</div>
+      <div class="key">\</div>
+    </div>
+    <div class="row">
+      <div class="key capslock">Caps Lock</div>
+      <div class="key">A</div>
+      <div class="key">S</div>
+      <div class="key">D</div>
+      <div class="key">F</div>
+      <div class="key">G</div>
+      <div class="key">H</div>
+      <div class="key">J</div>
+      <div class="key">K</div>
+      <div class="key">L</div>
+      <div class="key">;</div>
+      <div class="key">'</div>
+      <div class="key enter">Enter</div>
+    </div>
+    <div class="row">
+      <div class="key shift-left">Shift</div>
+      <div class="key">Z</div>
+      <div class="key">X</div>
+      <div class="key">C</div>
+      <div class="key">V</div>
+      <div class="key">B</div>
+      <div class="key">N</div>
+      <div class="key">M</div>
+      <div class="key">,</div>
+      <div class="key">.</div>
+      <div class="key">/</div>
+      <div class="key shift-right">Shift</div>
+    </div>
+    <div class="row">
+      <div class="key ctrl">Ctrl</div>
+      <div class="key">Win</div>
+      <div class="key">Alt</div>
+      <div class="key space"></div>
+      <div class="key">Alt</div>
+      <div class="key">Fn</div>
+      <div class="key ctrl">Ctrl</div>
+    </div>
+  </div>
+
+</body>
+</html>
